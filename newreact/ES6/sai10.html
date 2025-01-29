@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<h4>Aishwarya Kamble</h4>
+<body>
+
+<h1>Arrow Function</h1>
+
+<p>The <strong>this</strong> keyword represents the Header object.</p>
+
+<button id="btn">Click Me!</button>
+
+<p><strong>this</strong> represents:</p>
+
+<p id="demo"></p>
+
+ 
+<script>
+class Header {
+  constructor() {
+    this.color = "Red";
+  }
+
+  changeColor = () => {
+    document.getElementById("demo").innerHTML += this;
+  }
+}
+
+const myheader = new Header();
+
+//The window object calls the function:
+window.addEventListener("load", myheader.changeColor);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", myheader.changeColor);
+
+</script>
+
+</body>
+</html>
+
+<!-- This program demonstrates how the this keyword behaves differently in an arrow function.
+Header class:
+The class has a property color set to "Red".
+The changeColor method is an arrow function. Arrow functions do not have their own this; instead, they inherit this from the surrounding context. In this case, this refers to the Header object.
+this behavior:
+When the changeColor method is called by the window object (window.addEventListener("load", myheader.changeColor)), this still refers to the Header object because arrow functions do not bind their own this.
+When the changeColor method is called by the button click (document.getElementById("btn").addEventListener("click", myheader.changeColor)), this also refers to the Header object.
+The result of calling this will be shown in the <p id="demo"></p> element.
+ -->
+

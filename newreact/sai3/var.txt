@@ -1,0 +1,12 @@
+var
+define outside function,it becomes global
+define inside function,it becomes local
+define inside a loop,can also be used outside the loop
+
+for(int i = 1; i <=
+
+let
+define inside the function,it becomes local
+define inside the loop,cannot be used outside the loop
+
+const -> non changing values

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<h4>Aishwarya Kamble</h4>
+<body>
+  
+<script>
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+class Model extends Car {
+  constructor(name, mod) {
+    super(name);
+    this.model = mod;
+  }  
+  show() {
+    return this.present() + ', it is a ' + this.model
+  }
+}
+
+const mycar = new Model("Hundai", "Verna");
+document.write(mycar.show());
+</script>
+
+</body>
+</html>
+
+<!-- This program demonstrates JavaScript inheritance using two classes: Car and Model.
+
+Car class:
+
+Has a constructor to set the car's brand (brand).
+Includes a present() method that returns a message: "I have a [brand]".
+
+Model class (inherits from Car):
+
+Extends the Car class.
+Its constructor accepts a name (brand) and a mod (model). It uses super(name) to call the Car class's constructor.
+Includes a show() method that combines the brand and model into a message: "I have a [brand], it is a [model]".
+Creates an object:
+
+A Model object mycar is created with brand "Hundai" and model "Creta".
+Displays the message:
+
+The show() method of mycar generates the message:
+"I have a Hundai, it is a Creta".
+This is displayed on the webpage using document.write(). -->
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<h1>Aishwarya Kamble</h1>
+<body>
+  
+<script>
+function calculate(a, b) {
+  const add = a + b;
+  const substract = a - b;
+  const multiply = a * b;
+  const divide = a / b;
+
+  return [add, substract, multiply, divide];
+}
+
+const [add,substract,multiply, divide] = calculate(100, 450);
+
+document.write("<p>Sum of two numbers: " + add + "</p>");
+document.write("<p>Difference " + substract + "</p>");
+document.write("<p>Product: " + multiply + "</p>");
+document.write("<p>Quotient " + divide + "</p>");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<h1>Aishwarya Kamble</h1>
+<body>
+
+<p id="demo"></p>
+  
+<script>
+const vehicleOne = {
+  brand: 'Mercedes benz',
+  model: 'g class',
+  type: 'car',
+  year: 2023, 
+  color: 'black'
+}
+
+myVehicle(vehicleOne);
+
+function myVehicle({type, color, brand, model}) {
+  const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';
+
+  document.getElementById("demo").innerHTML = message;
+}
+</script>
+
+</body>
+</html>

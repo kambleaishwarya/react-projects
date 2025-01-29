@@ -1,0 +1,41 @@
+
+class sai
+{
+	/*public static void print(complex c)
+	{
+		System.out.println( c );
+	}
+	public static void print(Point p)
+	{
+		System.out.println( p );
+	}*/
+	public static void print(Object o)
+	{
+		System.out.println( o );
+	}
+	public static void main(String args[])
+	{
+		complex c = new complex(1,2);
+		Point p = new Point(10,20);
+		print( c );
+		print( p );
+	}
+}
+
+	GregorianCalendar cobj = new GregorianCalendar();
+	
+	Calendar cobj = new GregorianCalendar();
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
